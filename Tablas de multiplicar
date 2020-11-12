@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int  main () {
+    char regresar;
+    int a, b , tope = 10;    
+    
+    do
+    {        
+        printf("\n   Introduzca un numero entero: ", 163 );
+        scanf("%d", &b);
+        printf("\n   La tabla de multiplicar del %d es:\n", b);  
+        
+        for (a=1;a <= tope;a++)
+             printf ("\n %d * %d = %d " , b, a, b * a);      
+        
+        printf("\n\n   Desea ver otra tabla (s/n)?: ", 168 );
+        fflush( stdin );
+        scanf("%c", &regresar);
+        
+    }while ( regresar != 'n' );  
+    
+    return (0);
+}
